@@ -18,3 +18,5 @@ fp-info-cache
 *.ses
 *.xml
 *.csv
+output/
+*-backups/
