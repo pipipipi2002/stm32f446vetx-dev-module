@@ -17,6 +17,7 @@ fp-info-cache
 *.dsn
 *.ses
 *.xml
-*.csv
-output/
+*.gbr
+*.gbrjob
+*.drl
 *-backups/
