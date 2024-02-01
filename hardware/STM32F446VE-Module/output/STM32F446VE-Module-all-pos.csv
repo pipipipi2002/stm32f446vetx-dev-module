@@ -1,4 +1,4 @@
-"Designator","Val","Package","Mid X","Mid Y","Rotation","Side"
+"Designator","Val","Package","Mid X","Mid Y","Rotation","Layer"
 "C1","100n","C_0603_1608Metric","50.3175","28.375","0","bottom"
 "C5","100n","C_0603_1608Metric","47.2695","28.375","0","bottom"
 "C7","1u","C_0603_1608Metric","10.541","24.553","0","bottom"

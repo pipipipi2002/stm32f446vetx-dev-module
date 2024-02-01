@@ -7334,7 +7334,7 @@
     (property "Mouser" "https://www.mouser.sg/ProductDetail/Wurth-Elektronik/830108207209?qs=hWgE7mdIu5QIK2RaX2S5hg%3D%3D" (at 30.48 203.2 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "JLCPCB" "" (at 30.48 203.2 0)
+    (property "JLCPCB" "C6106563" (at 30.48 203.2 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 6689eff9-8d22-4c2a-9be4-82acc3b0557b))
