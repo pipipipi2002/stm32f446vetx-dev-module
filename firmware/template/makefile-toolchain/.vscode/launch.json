@@ -1,0 +1,70 @@
+{
+    "projectName": "controls-carier-board",
+    "configurations": [
+      {
+        "name": "OOCD: Debug",
+        "cwd": "${workspaceFolder}/build",
+        "executable": "./STM32F446VETx.elf",
+        "request": "launch",
+        "type": "cortex-debug",
+        "servertype": "openocd",
+        "device": "STM32F446VE",
+        "configFiles": [
+          "interface/stlink.cfg",
+          "target/stm32f0x.cfg",
+        ],
+        "openOCDLaunchCommands": ["init", "reset init"],
+        "runToEntryPoint": "main",
+        "svdFile": "./.vscode/STM32F072x.svd",
+        "preLaunchTask": "Build All",
+        "swoConfig":
+        {
+            "enabled": true,
+            "cpuFrequency": 168000000,
+            "swoFrequency": 4000000,
+            "source": "probe",
+            "decoders": [
+                {
+                    "label": "ITM port 0 output",
+                    "type": "console",
+                    "port": 0,
+                    "showOnStartup": true,
+                    "encoding": "ascii"
+                }
+            ]
+        }
+      },
+      {
+        "name": "OOCD: Attach",
+        "cwd": "${workspaceFolder}/build",
+        "executable": "./STM32F446VETx.elf",
+        "request": "attach",
+        "type": "cortex-debug",
+        "servertype": "openocd",
+        "device": "STM32F446VE",
+        "configFiles": [
+          "interface/stlink.cfg",
+          "target/stm32f0x.cfg",
+        ],
+        "openOCDLaunchCommands": ["init", "reset init"],
+        "runToEntryPoint": "main",
+        "svdFile": "./.vscode/STM32F072x.svd",
+        "swoConfig":
+        {
+            "enabled": true,
+            "cpuFrequency": 168000000,
+            "swoFrequency": 4000000,
+            "source": "probe",
+            "decoders": [
+                {
+                    "label": "ITM port 0 output",
+                    "type": "console",
+                    "port": 0,
+                    "showOnStartup": true,
+                    "encoding": "ascii"
+                }
+            ]
+        }
+      }
+    ]
+}
