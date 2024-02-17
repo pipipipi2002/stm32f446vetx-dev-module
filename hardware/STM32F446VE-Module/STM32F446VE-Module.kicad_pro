@@ -573,7 +573,7 @@
       "idf": "",
       "netlist": "../../../../../../../Applications/KiCad/",
       "specctra_dsn": "",
-      "step": "",
+      "step": "STM32F446VE-Module.step",
       "vrml": ""
     },
     "page_layout_descr_file": ""
