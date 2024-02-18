@@ -1,0 +1,14 @@
+cmake_minimum_required(VERSION 3.12)
+
+project(STM32F446VETx-project C CXX ASM )
+
+set(PROJECT_SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/Src )
+set(PROJECT_INCLUDE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/Inc )
+
+set(PROJECT_SOURCE_FILES 
+    ${PROJECT_SOURCE_DIR}/selftest.c
+    )
+
+add_library(${PROJECT_NAME} INTERFACE )
+target_sources(${PROJECT_NAME} INTERFACE ${PROJECT_SOURCE_FILES} )
+target_include_directories(${PROJECT_NAME} INTERFACE ${PROJECT_INCLUDE_DIR} )

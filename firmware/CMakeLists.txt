@@ -27,13 +27,15 @@ set(CMAKE_CXX_EXTENSIONS ON)
 # Add the interface libraries
 add_subdirectory(Core)
 add_subdirectory(Drivers)
+add_subdirectory(Project)
 
 # Executable files
 add_executable(${EXECUTABLE} ${STARTUP_SCRIPT})
 
 target_link_libraries (${EXECUTABLE} 
     stm32f4_hal 
-    STM32F446VETx-core)
+    STM32F446VETx-core
+    STM32F446VETx-project)
 
 # Embedded macros(defines)
 target_compile_definitions(${EXECUTABLE} PRIVATE
