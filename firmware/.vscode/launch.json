@@ -11,11 +11,11 @@
         "device": "STM32F446VE",
         "configFiles": [
           "interface/stlink.cfg",
-          "target/stm32f0x.cfg",
+          "target/stm32f4x.cfg",
         ],
         "openOCDLaunchCommands": ["init", "reset init"],
         "runToEntryPoint": "main",
-        "svdFile": "./.vscode/STM32F072x.svd",
+        "svdFile": "./.vscode/STM32F446.svd",
         "preLaunchTask": "Build All",
         "swoConfig":
         {
@@ -44,11 +44,11 @@
         "device": "STM32F446VE",
         "configFiles": [
           "interface/stlink.cfg",
-          "target/stm32f0x.cfg",
+          "target/stm32f4x.cfg",
         ],
         "openOCDLaunchCommands": ["init", "reset init"],
         "runToEntryPoint": "main",
-        "svdFile": "./.vscode/STM32F072x.svd",
+        "svdFile": "./.vscode/STM32F446.svd",
         "swoConfig":
         {
             "enabled": true,

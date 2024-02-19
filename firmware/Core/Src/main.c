@@ -21,6 +21,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include <printf.h>
 #include "selftest.h"
 /* USER CODE END Includes */
 
@@ -57,7 +58,7 @@ static void MX_CAN1_Init(void);
 static void MX_SDIO_SD_Init(void);
 static void MX_UART5_Init(void);
 /* USER CODE BEGIN PFP */
-
+static void lib_printf_init(void);
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -93,8 +94,8 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
-  MX_CAN1_Init();
-  MX_SDIO_SD_Init();
+  // MX_CAN1_Init();
+  // MX_SDIO_SD_Init();
   MX_UART5_Init();
   /* USER CODE BEGIN 2 */
 
@@ -102,12 +103,16 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+  uint32_t i = 0;
   while (1)
   {
     /* USER CODE END WHILE */
-    test_gpioBlink();
-    HAL_Delay(1000);
+
     /* USER CODE BEGIN 3 */
+    test_gpioBlink();
+
+    printf("Blinking %d\n\r", i++);
+    HAL_Delay(1000);
   }
   /* USER CODE END 3 */
 }
@@ -304,7 +309,15 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
-
+/**
+ * @brief For printf Library submodule.
+ * 
+ * @param character
+ */
+void _putchar(char character)
+{
+  HAL_UART_Transmit(&huart5, &character, 1, 10);
+}
 /* USER CODE END 4 */
 
 /**

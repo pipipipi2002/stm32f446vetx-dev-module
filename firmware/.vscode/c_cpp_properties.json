@@ -8,7 +8,8 @@
                 "${workspaceFolder}/Drivers/STM32F4xx_HAL_Driver/Inc",
                 "${workspaceFolder}/Drivers/CMSIS/Include",
                 "${workspaceFolder}/Drivers/CMSIS/Device/ST/STM32F4xx/Include",
-                "${workspaceFolder}/Project/Inc"
+                "${workspaceFolder}/Project/Inc",
+                "${workspaceFolder}/Lib/printf"
             ],
             "defines": [
                 "USE_HAL_DRIVER",
