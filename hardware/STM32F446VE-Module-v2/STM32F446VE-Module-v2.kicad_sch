@@ -7,7 +7,7 @@
   (title_block
     (title "STM32F446VETx Module")
     (date "2024-01-22")
-    (rev "Rev 1.0.0")
+    (rev "Rev 2.0.0")
   )
 
   (lib_symbols
@@ -6751,7 +6751,7 @@
     (pin "1" (uuid 11948224-8c5a-4144-abf4-6850fc8ff038))
     (pin "2" (uuid 3e2ca55d-818b-4bea-9824-b5673c5b915e))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "R12") (unit 1)
         )
@@ -6776,7 +6776,7 @@
     )
     (pin "1" (uuid f6073dde-2dfd-44ec-a730-b4e6e9dddb19))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "#PWR039") (unit 1)
         )
@@ -6806,7 +6806,7 @@
     (pin "1" (uuid 743924aa-c62f-402a-8329-116afb95d3d0))
     (pin "2" (uuid 9f727fee-f7ac-4510-9878-422cc33d94c0))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "D11") (unit 1)
         )
@@ -6831,7 +6831,7 @@
     )
     (pin "1" (uuid eadc8de1-5d02-460d-bcb8-d5fd6844b0aa))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "TP5") (unit 1)
         )
@@ -6856,7 +6856,7 @@
     )
     (pin "1" (uuid 0dcf6d83-19a0-42b5-a095-df3ae9f6efdf))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "#PWR01") (unit 1)
         )
@@ -6894,7 +6894,7 @@
     (pin "8" (uuid e14d372c-0176-4d3e-bcde-e2d54343f157))
     (pin "9" (uuid b2bbf9c1-878a-40d7-b6a5-299ba064fa42))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "J3") (unit 1)
         )
@@ -6923,7 +6923,7 @@
     (pin "1" (uuid 86c23a8d-41b6-44e6-b412-1cf29a4dde93))
     (pin "2" (uuid 1c2bc820-e2f8-4a78-a020-14a042fe8e53))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "C16") (unit 1)
         )
@@ -6948,7 +6948,7 @@
     )
     (pin "1" (uuid a25f7198-f6f5-4d9d-aefe-5e985bd45e23))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "#PWR024") (unit 1)
         )
@@ -6977,7 +6977,7 @@
     (pin "1" (uuid 9dcefef5-417e-4877-892c-6f62f5694bef))
     (pin "2" (uuid 67dd1813-0376-4188-88f0-e70b22066827))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "R14") (unit 1)
         )
@@ -7002,7 +7002,7 @@
     )
     (pin "1" (uuid 19e085a6-012d-40ad-8f6f-fe7d2bd9c815))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "#PWR05") (unit 1)
         )
@@ -7027,7 +7027,7 @@
     )
     (pin "1" (uuid a805d933-da77-448e-9d70-770db01af2fb))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "TP1") (unit 1)
         )
@@ -7058,7 +7058,7 @@
     (pin "3" (uuid 664c084c-750c-49dc-92c1-2df0440bdc19))
     (pin "4" (uuid c5c75320-6e63-4ad1-8a2c-0c21f366528f))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "SW2") (unit 1)
         )
@@ -7083,7 +7083,7 @@
     )
     (pin "1" (uuid 85543cf0-c934-4664-8bee-8cfe8ca3692e))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "#PWR018") (unit 1)
         )
@@ -7108,7 +7108,7 @@
     )
     (pin "1" (uuid ecfac902-1ebc-4513-86fb-02088cbfd218))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "#PWR015") (unit 1)
         )
@@ -7140,7 +7140,7 @@
     (pin "4" (uuid 38a87577-5acd-40d9-9b66-6554127f1f2b))
     (pin "5" (uuid 43613d93-0824-4fd0-a034-231d58db4534))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "U1") (unit 1)
         )
@@ -7169,7 +7169,7 @@
     (pin "1" (uuid 20719d53-a8d1-41c6-9747-eaffc571928a))
     (pin "2" (uuid 235f954f-a2c8-4929-8660-9f563836ee13))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "C5") (unit 1)
         )
@@ -7194,7 +7194,7 @@
     )
     (pin "1" (uuid ec935022-cb81-4b7e-af1c-ef46b161dc9f))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "TP10") (unit 1)
         )
@@ -7223,7 +7223,7 @@
     (pin "1" (uuid 107816bc-8f88-4fcd-9988-42bc9cd39d05))
     (pin "2" (uuid e0d426fa-f9d0-4821-b5d4-c648ff56cf97))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "C17") (unit 1)
         )
@@ -7248,7 +7248,7 @@
     )
     (pin "1" (uuid e4e0e59e-45a0-47be-aa5e-957f9d6f5eb2))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "#PWR021") (unit 1)
         )
@@ -7283,7 +7283,7 @@
     (pin "7" (uuid cfa3977f-9637-4704-a902-1616b99d9f0b))
     (pin "8" (uuid a4f0b278-0ea2-4b7f-8d23-e3e9d068ee50))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "U4") (unit 1)
         )
@@ -7308,7 +7308,7 @@
     )
     (pin "1" (uuid deeb3068-5051-402d-8c1b-c3f0d76b487b))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "#PWR045") (unit 1)
         )
@@ -7342,7 +7342,7 @@
     (pin "3" (uuid f5b28ce3-2609-4c74-965b-00603743479a))
     (pin "4" (uuid ceee6d3c-397c-412e-8f86-a3967b73d22e))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "X1") (unit 1)
         )
@@ -7374,7 +7374,7 @@
     (pin "1" (uuid 06a28fb5-2f86-4899-9b7e-b963691c0c40))
     (pin "2" (uuid fb2ba626-17d6-4dce-a848-9c18b9a5949f))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "C4") (unit 1)
         )
@@ -7399,7 +7399,7 @@
     )
     (pin "1" (uuid f71fdb32-cafe-4173-92ed-f6ee43b80329))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "TP4") (unit 1)
         )
@@ -7428,7 +7428,7 @@
     (pin "1" (uuid 2fa67a24-7c7e-4926-b1b2-c241d1ca7508))
     (pin "2" (uuid 32cfb5b7-f249-4247-911c-1892e93262ae))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "C1") (unit 1)
         )
@@ -7457,7 +7457,7 @@
     (pin "1" (uuid 85001d31-29c9-4632-a44f-1b9845b64bf0))
     (pin "2" (uuid 75200abd-c2b0-4a34-b9e1-02a115056caf))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "R16") (unit 1)
         )
@@ -7482,7 +7482,7 @@
     )
     (pin "1" (uuid 6667dfd7-4440-4cc3-a1ad-c59d7fc407a2))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "#PWR07") (unit 1)
         )
@@ -7507,7 +7507,7 @@
     )
     (pin "1" (uuid ec3f4f48-dd18-4bc8-85fe-424db4665b71))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "#PWR02") (unit 1)
         )
@@ -7536,7 +7536,7 @@
     (pin "1" (uuid bbcd7d4b-c1e0-43fe-860f-7c3806b7f8be))
     (pin "2" (uuid f30f93eb-4779-483e-b111-fc75eafa8e47))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "R1") (unit 1)
         )
@@ -7565,7 +7565,7 @@
     (pin "1" (uuid 706f206b-8f38-4a21-9391-d1769b9677a8))
     (pin "2" (uuid e0b351f2-de99-4ddb-a520-ad19d35db7ae))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "R4") (unit 1)
         )
@@ -7590,7 +7590,7 @@
     )
     (pin "1" (uuid 3c03d5b4-c5e8-475f-82ed-0cbe0087eff9))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "#PWR041") (unit 1)
         )
@@ -7619,7 +7619,7 @@
     (pin "1" (uuid 9ac8ddd9-71b8-4042-aa61-a243062e7bf3))
     (pin "2" (uuid bc466fce-2354-43ab-9317-547ea2a364e1))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "C9") (unit 1)
         )
@@ -7648,7 +7648,7 @@
     (pin "1" (uuid 52e90858-f9e1-4ed3-ad44-6a06b463953c))
     (pin "2" (uuid 3c2c9695-75b6-45bc-9123-567b61b92526))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "C22") (unit 1)
         )
@@ -7673,7 +7673,7 @@
     )
     (pin "1" (uuid 40adf96f-404d-4190-b88d-7db0ad7e3b69))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "#PWR011") (unit 1)
         )
@@ -7698,7 +7698,7 @@
     )
     (pin "1" (uuid 3833da6b-dd91-4cd4-be9d-e3cb0028d8d0))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "#PWR057") (unit 1)
         )
@@ -7727,7 +7727,7 @@
     (pin "1" (uuid 3eb1e0d8-0467-46ec-9fd7-f877eb3af630))
     (pin "2" (uuid 796a9f3a-0f57-4e98-9798-8246a64f8ef3))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "D7") (unit 1)
         )
@@ -7752,7 +7752,7 @@
     )
     (pin "1" (uuid 1f6ef572-a45f-4295-9833-35f37182aea9))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "#PWR028") (unit 1)
         )
@@ -7781,7 +7781,7 @@
     (pin "1" (uuid 2f067d94-7473-4a18-829e-1465b242550a))
     (pin "2" (uuid 54545b43-1eb8-4dea-8ebb-5fc6d49226b9))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "SW1") (unit 1)
         )
@@ -7810,7 +7810,7 @@
     (pin "1" (uuid 3f9f858d-ac81-4d00-b9be-adf292f42fe4))
     (pin "2" (uuid 7893163e-81c0-49fc-a1c4-6e71a66f7b37))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "D3") (unit 1)
         )
@@ -7839,7 +7839,7 @@
     (pin "1" (uuid 00aebb64-56ed-47dd-aa26-fe55b2a6a4fb))
     (pin "2" (uuid 0e038ea7-ee07-4ea0-97ac-fa3cf017d09a))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "R3") (unit 1)
         )
@@ -7864,7 +7864,7 @@
     )
     (pin "1" (uuid a8588835-059e-4601-a225-d13065f7df6f))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "#PWR035") (unit 1)
         )
@@ -7897,7 +7897,7 @@
     (pin "5" (uuid bf97b17f-fecb-44ea-9d3e-dba15cfa99a3))
     (pin "6" (uuid f5be5c38-79e8-42a6-acc2-7bf860bfebcb))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "J2") (unit 1)
         )
@@ -7922,7 +7922,7 @@
     )
     (pin "1" (uuid 9e0f7ac5-258f-4676-8dbe-8076311203ac))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "#PWR029") (unit 1)
         )
@@ -7951,7 +7951,7 @@
     (pin "1" (uuid 1581793d-ad78-4c82-b994-bd9b8bc9a556))
     (pin "2" (uuid 7bdc3838-b95f-407d-acfa-b4ddcdac84a8))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "R17") (unit 1)
         )
@@ -7982,7 +7982,7 @@
     (pin "3" (uuid f465c4d0-d66f-49ad-a205-823347dc9c02))
     (pin "4" (uuid 6ca1c826-6b7e-44d3-997b-68d44e6e0707))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "SW3") (unit 1)
         )
@@ -8007,7 +8007,7 @@
     )
     (pin "1" (uuid 50895dcb-8b3a-45d4-812c-bf3f15fbcbec))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "#PWR09") (unit 1)
         )
@@ -8032,7 +8032,7 @@
     )
     (pin "1" (uuid 1afa062f-ea82-416a-8e34-0708b093ac9c))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "#PWR036") (unit 1)
         )
@@ -8057,7 +8057,7 @@
     )
     (pin "1" (uuid c97b409b-3acd-47ae-b90e-16553aa9c1b7))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "#PWR04") (unit 1)
         )
@@ -8082,7 +8082,7 @@
     )
     (pin "1" (uuid a631c7b9-1818-4069-9daa-8464be198972))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "#PWR030") (unit 1)
         )
@@ -8107,7 +8107,7 @@
     )
     (pin "1" (uuid c120dba3-297b-4a3c-8ade-1aa158fd2f62))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "#FLG03") (unit 1)
         )
@@ -8132,7 +8132,7 @@
     )
     (pin "1" (uuid 1a13afd4-9dc2-4e54-97ab-f43f96daae9a))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "#PWR032") (unit 1)
         )
@@ -8161,7 +8161,7 @@
     (pin "1" (uuid 2fbdb8e0-8021-485c-9f81-0ed25d0018ab))
     (pin "2" (uuid f8189955-b928-42dc-aba8-b9a8399e3273))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "D10") (unit 1)
         )
@@ -8186,7 +8186,7 @@
     )
     (pin "1" (uuid 8ea0e004-33e5-4344-9906-bfb70776efde))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "#PWR033") (unit 1)
         )
@@ -8215,7 +8215,7 @@
     (pin "1" (uuid e9826a39-e84c-4848-990d-2af179359260))
     (pin "2" (uuid 4b453b96-02a1-4fbd-9eb2-8643efe96d6b))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "C6") (unit 1)
         )
@@ -8240,7 +8240,7 @@
     )
     (pin "1" (uuid 3d6ae9ed-dd99-4914-b573-13df85e5ca5b))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "TP2") (unit 1)
         )
@@ -8265,7 +8265,7 @@
     )
     (pin "1" (uuid fdf0fbce-33bd-4747-9571-bed48839c891))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "#PWR046") (unit 1)
         )
@@ -8290,7 +8290,7 @@
     )
     (pin "1" (uuid dbaf1261-2901-4218-ac4f-3b885220d362))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "#PWR012") (unit 1)
         )
@@ -8320,7 +8320,7 @@
     (pin "2" (uuid b3b65d57-4786-4317-8dc9-86d2e958bfc4))
     (pin "MP" (uuid 7bdc72ca-9d71-4709-80ac-b3205efb3a89))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "J6") (unit 1)
         )
@@ -8345,7 +8345,7 @@
     )
     (pin "1" (uuid f3ca5cf4-dbcf-4e4c-8409-82998543d940))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "#PWR020") (unit 1)
         )
@@ -8374,7 +8374,7 @@
     (pin "1" (uuid f7ab90d4-4300-4379-b9b2-81bf41a930a8))
     (pin "2" (uuid 4aa9c6c5-a2d8-4850-8822-8981d8f3d995))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "C21") (unit 1)
         )
@@ -8399,7 +8399,7 @@
     )
     (pin "1" (uuid d9bb8f63-8ad7-4beb-9cfa-608cbdc098b7))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "H1") (unit 1)
         )
@@ -8424,7 +8424,7 @@
     )
     (pin "1" (uuid a35bbe6a-4e67-414b-b103-f1e2d5e85432))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "#PWR050") (unit 1)
         )
@@ -8453,7 +8453,7 @@
     (pin "1" (uuid e6481ad3-55f3-460b-849c-45e6f0c22b29))
     (pin "2" (uuid fb7a85c0-71c0-4c28-be1c-87afc77cd561))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "D4") (unit 1)
         )
@@ -8478,7 +8478,7 @@
     )
     (pin "1" (uuid 20338217-5c97-464d-bc2a-72d7ac786043))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "#FLG05") (unit 1)
         )
@@ -8510,7 +8510,7 @@
     (pin "4" (uuid f3771260-32ee-4303-86cc-d7f58175406e))
     (pin "MP" (uuid f6ac4254-5e39-4cd5-8119-12e0d87ec9ef))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "J7") (unit 1)
         )
@@ -8542,7 +8542,7 @@
     (pin "4" (uuid 508da0a0-f911-433f-b77a-7cf7a51327df))
     (pin "MP" (uuid 85e95494-bc3f-47c0-a5e7-d6911c940e09))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "J8") (unit 1)
         )
@@ -8567,7 +8567,7 @@
     )
     (pin "1" (uuid a6821d38-1f28-429a-bf72-051aa6427ee9))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "TP9") (unit 1)
         )
@@ -8592,7 +8592,7 @@
     )
     (pin "1" (uuid 5480e39d-f79b-4b7a-9258-2378395ea4ba))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "#PWR031") (unit 1)
         )
@@ -8621,7 +8621,7 @@
     (pin "1" (uuid f63201b7-a4b1-4c9e-9329-95b81652b817))
     (pin "2" (uuid b8286aa5-8b8e-4809-8180-7bd8b81029a4))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "R15") (unit 1)
         )
@@ -8646,7 +8646,7 @@
     )
     (pin "1" (uuid 25a5b6e1-5578-4b20-8379-e5821931478c))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "#FLG04") (unit 1)
         )
@@ -8675,7 +8675,7 @@
     (pin "1" (uuid cc14a4ad-228f-4896-8aaf-28f11226664f))
     (pin "2" (uuid 24ab27fc-e374-46f3-bc53-78856745d067))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "C11") (unit 1)
         )
@@ -8704,7 +8704,7 @@
     (pin "1" (uuid 4c32170c-0e1f-4a9b-856b-3eda7470b62d))
     (pin "2" (uuid b36028bd-0b91-4339-ae72-3c12c61ee8e9))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "D5") (unit 1)
         )
@@ -8733,7 +8733,7 @@
     (pin "1" (uuid 5d580dd0-5bde-4d9c-9c60-436721175d17))
     (pin "2" (uuid 0ec6b6d6-a60f-4068-8428-7f77b61e077f))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "R13") (unit 1)
         )
@@ -8762,7 +8762,7 @@
     (pin "1" (uuid 2b516d23-4d06-430d-9496-34d71698d08f))
     (pin "2" (uuid b11447fb-852d-4b40-b99b-9904e8574fe6))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "D2") (unit 1)
         )
@@ -8787,7 +8787,7 @@
     )
     (pin "1" (uuid 42e711d9-7d40-4b67-8084-8f7d1668ae76))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "#PWR027") (unit 1)
         )
@@ -8816,7 +8816,7 @@
     (pin "1" (uuid 1af3e00a-b6ea-43c0-87d7-f25308406b94))
     (pin "2" (uuid ef2591d7-31fe-443b-828d-1861ae308d17))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "R9") (unit 1)
         )
@@ -8845,7 +8845,7 @@
     (pin "1" (uuid 4bd7f63f-8a52-4497-89be-71941b90a5a9))
     (pin "2" (uuid 5e2a08f1-9f62-42ec-a8bb-b665e1a4fae0))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "R7") (unit 1)
         )
@@ -8870,7 +8870,7 @@
     )
     (pin "1" (uuid cfca2f7b-ee99-4b65-bd37-40255e129cb9))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "H2") (unit 1)
         )
@@ -8899,7 +8899,7 @@
     (pin "1" (uuid 67f03eb8-a1c9-4a4c-a724-9107691b3802))
     (pin "2" (uuid 66b09db3-cd7a-4e18-a333-03fd929a923f))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "R6") (unit 1)
         )
@@ -8928,7 +8928,7 @@
     (pin "1" (uuid 83a29537-503f-42e1-beee-191960313f60))
     (pin "2" (uuid 8dd7d371-7944-453b-956e-bdc2c0c1f12d))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "R10") (unit 1)
         )
@@ -8972,7 +8972,7 @@
     (pin "B9" (uuid 0fe2b156-0d9f-4300-8bca-ab8691ba2717))
     (pin "S1" (uuid b09767d4-58e1-4b5e-a99a-3595a9db7ff8))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "J1") (unit 1)
         )
@@ -8997,7 +8997,7 @@
     )
     (pin "1" (uuid b78c69da-59f7-4db2-8da9-24d9fe805918))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "#PWR06") (unit 1)
         )
@@ -9022,7 +9022,7 @@
     )
     (pin "1" (uuid 4049ae88-af8e-4bb8-945a-ec6e57032328))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "#PWR055") (unit 1)
         )
@@ -9054,7 +9054,7 @@
     (pin "1" (uuid 0d0673ca-101b-49be-b68c-6cf660d6f22a))
     (pin "2" (uuid eda86a5e-0c81-41ba-9ac0-199b9e60f4be))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "C25") (unit 1)
         )
@@ -9079,7 +9079,7 @@
     )
     (pin "1" (uuid 26e7de0e-3e93-4b69-b5fb-9196889774e5))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "H3") (unit 1)
         )
@@ -9104,7 +9104,7 @@
     )
     (pin "1" (uuid 76ec31ad-e522-4ace-bddd-168ae008f5e5))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "#PWR022") (unit 1)
         )
@@ -9129,7 +9129,7 @@
     )
     (pin "1" (uuid e90cce9e-dc6f-4ab6-9b79-315c0cb4c973))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "#PWR010") (unit 1)
         )
@@ -9154,7 +9154,7 @@
     )
     (pin "1" (uuid bde34b9d-ee1e-4d56-b913-4b414ef2b6fb))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "#PWR044") (unit 1)
         )
@@ -9183,7 +9183,7 @@
     (pin "1" (uuid 9464d155-4a97-429c-a854-900db84dae97))
     (pin "2" (uuid c98b6f36-29cc-4ca2-8ce4-562bfbc439a6))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "C14") (unit 1)
         )
@@ -9208,7 +9208,7 @@
     )
     (pin "1" (uuid 336d9409-b521-4ffe-80c2-63c7e60e956e))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "#PWR043") (unit 1)
         )
@@ -9233,7 +9233,7 @@
     )
     (pin "1" (uuid d873b9c2-0442-4763-8afd-1a1d34805ec9))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "#PWR042") (unit 1)
         )
@@ -9286,7 +9286,7 @@
     (pin "7" (uuid 81fd2375-9e64-4fa8-bca7-6bbef7a42ee3))
     (pin "9" (uuid f108317c-bd21-4e96-9661-10ceed91fcec))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "U3") (unit 1)
         )
@@ -9311,7 +9311,7 @@
     )
     (pin "1" (uuid 4476f5cb-0e78-4eb3-bddd-0af44c6c1c5c))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "#PWR034") (unit 1)
         )
@@ -9340,7 +9340,7 @@
     (pin "1" (uuid e7b7c3b8-f0ed-43e7-8808-2b209e8edac6))
     (pin "2" (uuid fd137e0c-9f97-4a7b-82c4-5ff4312bd620))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "D6") (unit 1)
         )
@@ -9365,7 +9365,7 @@
     )
     (pin "1" (uuid ebb04813-820e-44b9-9471-857c47d7feb7))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "#PWR026") (unit 1)
         )
@@ -9390,7 +9390,7 @@
     )
     (pin "1" (uuid dd9186c3-ee7a-488c-9ed5-2278d624ab1c))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "#PWR025") (unit 1)
         )
@@ -9415,7 +9415,7 @@
     )
     (pin "1" (uuid 9c1e43d8-b783-4b61-913f-3fd355f73ccd))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "#PWR056") (unit 1)
         )
@@ -9444,7 +9444,7 @@
     (pin "1" (uuid 3f84abc1-1177-4bd9-b0d1-8094e8441c4d))
     (pin "2" (uuid 1a4dfb88-1e39-4ffc-ae5f-8ac4d8c8dfa6))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "C13") (unit 1)
         )
@@ -9469,7 +9469,7 @@
     )
     (pin "1" (uuid ecb59e30-a4a8-4e9e-915e-825adb34db2e))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "#PWR053") (unit 1)
         )
@@ -9494,7 +9494,7 @@
     )
     (pin "1" (uuid dc4f3a71-143b-4ed1-93dc-5e1dc64c4931))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "#PWR013") (unit 1)
         )
@@ -9519,7 +9519,7 @@
     )
     (pin "1" (uuid f7cb8bd7-1ebe-4be8-8392-35e8f98490dd))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "#FLG01") (unit 1)
         )
@@ -9544,7 +9544,7 @@
     )
     (pin "1" (uuid d11abf6d-d3c6-4cee-9305-42c10af44b4f))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "#PWR037") (unit 1)
         )
@@ -9569,7 +9569,7 @@
     )
     (pin "1" (uuid cce76f0a-0124-49eb-bf5b-f83ae6ccaf4f))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "#PWR017") (unit 1)
         )
@@ -9594,7 +9594,7 @@
     )
     (pin "1" (uuid 3065d3ba-cd24-4716-a663-c769917ff1b3))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "#PWR040") (unit 1)
         )
@@ -9623,7 +9623,7 @@
     (pin "1" (uuid 6254c811-03ac-4211-82e9-896a3f2ae49f))
     (pin "2" (uuid 1b17bc27-927e-4a71-9241-be333e584e16))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "R2") (unit 1)
         )
@@ -9652,7 +9652,7 @@
     (pin "1" (uuid 1ed4cfe6-fe1e-404d-939f-11ef9cc42b26))
     (pin "2" (uuid bc74c97a-e480-4153-8384-5f8029f1b4d0))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "C12") (unit 1)
         )
@@ -9681,7 +9681,7 @@
     (pin "1" (uuid 49df410f-187d-4a36-ac31-4d98729ea001))
     (pin "2" (uuid 0cbc2b02-ff0d-4699-973e-75c893440e7f))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "C3") (unit 1)
         )
@@ -9706,7 +9706,7 @@
     )
     (pin "1" (uuid 41040dc6-2d22-4240-9f0f-86d8d147028a))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "#PWR08") (unit 1)
         )
@@ -9731,7 +9731,7 @@
     )
     (pin "1" (uuid b0bcb798-6e18-4707-b984-c37c7900022e))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "TP3") (unit 1)
         )
@@ -9858,7 +9858,7 @@
     (pin "98" (uuid 2a117514-f562-4569-9ac7-4ad8f7611628))
     (pin "99" (uuid 0509cddb-7324-414e-9d65-13203b059ef8))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "U5") (unit 1)
         )
@@ -9883,7 +9883,7 @@
     )
     (pin "1" (uuid b3e91953-d849-45ab-ab30-124bf71daa4d))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "TP7") (unit 1)
         )
@@ -9912,7 +9912,7 @@
     (pin "1" (uuid b37b5248-7805-48e5-abcc-61e4211e07f3))
     (pin "2" (uuid 57dc983c-507b-4726-bd9a-0d1ad75eeb3f))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "R11") (unit 1)
         )
@@ -9937,7 +9937,7 @@
     )
     (pin "1" (uuid 2a5f69cb-681a-4c67-a0c9-9f64c3189971))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "#PWR049") (unit 1)
         )
@@ -9962,7 +9962,7 @@
     )
     (pin "1" (uuid d040daee-bfba-4d4f-bcb0-2fffde190d93))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "TP6") (unit 1)
         )
@@ -9991,7 +9991,7 @@
     (pin "1" (uuid 56fbe730-222f-454f-9cc3-d5c1a75f8a3b))
     (pin "2" (uuid 6ca35be0-61c7-4efb-9521-9a6a91737573))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "D9") (unit 1)
         )
@@ -10016,7 +10016,7 @@
     )
     (pin "1" (uuid 7042315c-ec9a-4b12-8d95-a7cd4643e8be))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "#PWR019") (unit 1)
         )
@@ -10045,7 +10045,7 @@
     (pin "1" (uuid c3c5606d-c640-4cad-b83c-8d584b20366a))
     (pin "2" (uuid a80e8db9-b31b-4c91-9fe2-b6ea010bb659))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "C2") (unit 1)
         )
@@ -10070,7 +10070,7 @@
     )
     (pin "1" (uuid b1cae7e4-ed91-4e59-892e-4e5e8b9c3b3b))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "#PWR051") (unit 1)
         )
@@ -10095,7 +10095,7 @@
     )
     (pin "1" (uuid e9417fc3-7866-49f4-a8a9-9c9cf614de14))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "#PWR047") (unit 1)
         )
@@ -10120,7 +10120,7 @@
     )
     (pin "1" (uuid a8b08c46-4a81-451d-832d-fa648d090758))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "#PWR023") (unit 1)
         )
@@ -10149,7 +10149,7 @@
     (pin "1" (uuid 80b324a3-1364-40e9-b00c-256e251e3cc7))
     (pin "2" (uuid dfa1079f-dd91-44c3-81b7-57a1419f5fda))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "C15") (unit 1)
         )
@@ -10251,7 +10251,7 @@
     (pin "8" (uuid fcaf2201-65ae-4f5f-8842-584ab0d988bd))
     (pin "9" (uuid 205391e9-81a8-4377-ae18-b56edc0cec4a))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "J5") (unit 1)
         )
@@ -10276,7 +10276,7 @@
     )
     (pin "1" (uuid 67f0d058-8524-4915-bca0-fbf39d39f484))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "#PWR016") (unit 1)
         )
@@ -10305,7 +10305,7 @@
     (pin "1" (uuid a1d0ddb8-0c4a-4de6-b410-fbfe637f5356))
     (pin "2" (uuid 8947d207-23fe-4229-b9ab-90db8a1fe30f))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "R5") (unit 1)
         )
@@ -10330,7 +10330,7 @@
     )
     (pin "1" (uuid 2f7ba4f4-a799-467a-a4e2-4f061ff9c826))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "#PWR052") (unit 1)
         )
@@ -10355,7 +10355,7 @@
     )
     (pin "1" (uuid 9853d787-bdc3-47ac-9efe-7eaf54dc2098))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "H4") (unit 1)
         )
@@ -10384,7 +10384,7 @@
     (pin "1" (uuid ec627c21-5536-4456-8370-d62eff503391))
     (pin "2" (uuid f6dd231c-79e4-40a3-af3b-4aa8183c39be))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "C18") (unit 1)
         )
@@ -10413,7 +10413,7 @@
     (pin "1" (uuid 4fb82275-b0ef-4d73-989c-b2b421a4bc46))
     (pin "2" (uuid ff14450d-74ee-4079-83f7-10b05ff321d1))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "C7") (unit 1)
         )
@@ -10445,7 +10445,7 @@
     (pin "1" (uuid fe2cd6ac-a2a6-4498-a4f4-0b78b76f65fc))
     (pin "2" (uuid 807a3eaf-4d32-4ade-a01c-bbf53542d509))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "C24") (unit 1)
         )
@@ -10474,7 +10474,7 @@
     (pin "1" (uuid d0f8eb9a-e456-4f2d-8bb2-55c18992359d))
     (pin "2" (uuid 235a64fe-cbb4-44ef-a4f2-aed6cfd748f0))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "D1") (unit 1)
         )
@@ -10499,7 +10499,7 @@
     )
     (pin "1" (uuid 716669d9-26a6-4020-aea4-c87618710391))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "#PWR048") (unit 1)
         )
@@ -10524,7 +10524,7 @@
     )
     (pin "1" (uuid 22e40198-4edb-4875-980a-82daa8a3ac99))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "TP8") (unit 1)
         )
@@ -10553,7 +10553,7 @@
     (pin "1" (uuid 68352143-138f-4ffb-aba1-8acc25deb3ca))
     (pin "2" (uuid c64231c9-5233-42a6-ad8e-33b26af35075))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "JP1") (unit 1)
         )
@@ -10578,7 +10578,7 @@
     )
     (pin "1" (uuid a8faa237-9d3b-43cc-be69-6e16648762b4))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "#FLG02") (unit 1)
         )
@@ -10607,7 +10607,7 @@
     (pin "1" (uuid 35c9f7f9-50af-40ac-8131-e0b9eb931835))
     (pin "2" (uuid a03d8b3b-dca3-4492-8916-1e7a942e2d87))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "D8") (unit 1)
         )
@@ -10632,7 +10632,7 @@
     )
     (pin "1" (uuid 40a01550-1d7a-4582-838e-eec3149f171a))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "#PWR054") (unit 1)
         )
@@ -10661,7 +10661,7 @@
     (pin "1" (uuid c001bed7-29b8-4c36-94f1-7a871d9ef034))
     (pin "2" (uuid 88014ae3-86b0-427c-90a2-827e60e6cce5))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "R8") (unit 1)
         )
@@ -10690,7 +10690,7 @@
     (pin "1" (uuid 8b4be7f3-d24d-4f03-a56d-9f16193c04f7))
     (pin "2" (uuid b0689fb4-02d1-43e7-af6f-04778a458532))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "C10") (unit 1)
         )
@@ -10715,7 +10715,7 @@
     )
     (pin "1" (uuid 293a27d3-782b-4f5f-b3f2-a481b8014ebc))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "#PWR03") (unit 1)
         )
@@ -10744,7 +10744,7 @@
     (pin "1" (uuid c6855daf-fef6-4c9a-a793-68a4c8d3c272))
     (pin "2" (uuid bec3cda7-12da-4359-87c2-1ce0c9eadd09))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "C19") (unit 1)
         )
@@ -10769,7 +10769,7 @@
     )
     (pin "1" (uuid cce52975-89c7-4fed-947e-bf08cd74359a))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "#FLG06") (unit 1)
         )
@@ -10798,7 +10798,7 @@
     (pin "1" (uuid 2168d360-8313-4854-86b0-6b7c3e407b7e))
     (pin "2" (uuid e291824a-f00c-42de-8cd9-9bc865e68555))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "C8") (unit 1)
         )
@@ -10827,7 +10827,7 @@
     (pin "1" (uuid bf7576a0-d722-40a0-8f62-1476f67f78aa))
     (pin "2" (uuid cd645022-8203-42df-a373-77ca1ea411f7))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "C20") (unit 1)
         )
@@ -10859,7 +10859,7 @@
     (pin "1" (uuid d7dd5ffa-5406-436d-87ef-5a4e15342821))
     (pin "2" (uuid b9d4c63d-5c0a-4e2e-adca-b15374d843eb))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "X2") (unit 1)
         )
@@ -10888,7 +10888,7 @@
     (pin "1" (uuid fd63d03d-7c37-453a-982d-ad4a3c7c5180))
     (pin "2" (uuid b5bf869f-98df-40eb-a609-1163c537f313))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "R18") (unit 1)
         )
@@ -10990,7 +10990,7 @@
     (pin "8" (uuid 14d64bed-ac32-4380-8e57-cb3abde2b983))
     (pin "9" (uuid ae7bbdfb-7867-4b56-8ed6-05ff679fdac0))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "J4") (unit 1)
         )
@@ -11015,7 +11015,7 @@
     )
     (pin "1" (uuid 4887221a-fa5e-4649-82b5-15c9a0eb39bf))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "#PWR038") (unit 1)
         )
@@ -11040,7 +11040,7 @@
     )
     (pin "1" (uuid 209347ee-deca-4ae8-bcaa-33a09410bd0e))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "#PWR014") (unit 1)
         )
@@ -11069,7 +11069,7 @@
     (pin "1" (uuid c957c1c4-56f0-4362-be39-11304dec4ae9))
     (pin "2" (uuid b2930458-12ea-414b-84e9-8c2fedf22fc8))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "C23") (unit 1)
         )
@@ -11102,7 +11102,7 @@
     (pin "5" (uuid a34e86a1-0bee-4df1-a88e-254ed4a81e46))
     (pin "6" (uuid 82923a9d-cf85-44aa-aa0b-7f159f5c8348))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "U2") (unit 1)
         )
@@ -11131,7 +11131,7 @@
     (pin "1" (uuid f7969fc4-a717-4645-91c4-efe94727e7ba))
     (pin "2" (uuid 243fbd75-6d0f-4ea4-a245-4e2ce2d8cfb1))
     (instances
-      (project "STM32F446VE-Module"
+      (project "STM32F446VE-Module-v2"
         (path "/8893aeaf-2309-421e-90eb-5d9e42cc36ce"
           (reference "R19") (unit 1)
         )
