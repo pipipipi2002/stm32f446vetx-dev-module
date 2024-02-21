@@ -106,8 +106,6 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-    data[1] = i;
-
     test_gpioBlink();
     printf("Blinking %d\n\r", i++);
 
