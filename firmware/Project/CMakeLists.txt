@@ -7,6 +7,7 @@ set(PROJECT_INCLUDE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/Inc )
 
 set(PROJECT_SOURCE_FILES 
     ${PROJECT_SOURCE_DIR}/selftest.c
+    # ${PROJECT_SOURCE_DIR}/littlefs_if.c
     )
 
 add_library(${PROJECT_NAME} INTERFACE )

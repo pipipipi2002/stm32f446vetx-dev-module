@@ -18,12 +18,16 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "fatfs.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include <stdbool.h>
 #include <printf.h>
+#include <lfs.h>
 #include "selftest.h"
+#include "littlefs_if.h"
+
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -43,6 +47,8 @@
 
 /* Private variables ---------------------------------------------------------*/
 SD_HandleTypeDef hsd;
+DMA_HandleTypeDef hdma_sdio_rx;
+DMA_HandleTypeDef hdma_sdio_tx;
 
 UART_HandleTypeDef huart5;
 
@@ -53,10 +59,11 @@ UART_HandleTypeDef huart5;
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
+static void MX_DMA_Init(void);
 static void MX_SDIO_SD_Init(void);
 static void MX_UART5_Init(void);
 /* USER CODE BEGIN PFP */
-
+static void SDIO_SD_Init(void);
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -71,7 +78,10 @@ static void MX_UART5_Init(void);
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-
+  FRESULT res; /* FatFs function common result code */
+  uint32_t byteswritten, bytesread; /* File write/read counts */
+  uint8_t wtext[] = "STM32 FATFS works bad!"; /* File write buffer */
+  uint8_t rtext[_MAX_SS];/* File read buffer */
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -92,10 +102,75 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
-  MX_SDIO_SD_Init();
+  MX_DMA_Init();
   MX_UART5_Init();
+  MX_FATFS_Init();
   /* USER CODE BEGIN 2 */
+  if (!HAL_GPIO_ReadPin(SDIO_nDET_GPIO_Port, SDIO_nDET_Pin))
+  {
+    printf("SD Card Detected\n\r");
+    SDIO_SD_Init();
+  } 
+  else
+  {
+    printf("SD Card NOT Detected\n\r");
+  }
 
+  FRESULT f_res;
+
+  f_res = f_mount(&SDFatFS, (TCHAR const*)SDPath, 0);
+  if (f_res == FR_NO_FILESYSTEM)
+  {
+    printf("Filesystem not FAT based, formatting.\n\r");
+    f_res = f_mkfs((TCHAR const*)SDPath, FM_ANY, 0, rtext, sizeof(rtext));
+    if (f_res != FR_OK)
+    {
+      printf("Formatting Error. Error Code: %d\n\r", f_res);
+      Error_Handler();
+    }
+  } 
+  else if (f_res != FR_OK)
+  {
+    printf("Mounting Error. Error Code: %d\n\r", f_res);
+    Error_Handler();
+  }
+
+  f_res = f_open(&SDFile, "goodAM.TXT", FA_CREATE_ALWAYS | FA_WRITE);
+  if (f_res != FR_OK)
+  {
+    printf("Open file error. Error Code: %d\n\r", f_res);
+    Error_Handler();
+  }
+
+  f_res = f_write(&SDFile, wtext, strlen((char *)wtext),  (void *)&byteswritten);
+  if ((byteswritten == 0) || (f_res != FR_OK))
+  {
+    printf("Writing Error. Error Code: %d\n\r", f_res);
+    Error_Handler();
+  }
+  f_close(&SDFile);
+
+  f_res = f_open(&SDFile, "goodAM.TXT", FA_OPEN_EXISTING | FA_READ);
+  if (f_res != FR_OK)
+  {
+    printf("Open file error. Error Code: %d\n\r", f_res);
+    Error_Handler();
+  }
+
+  f_res = f_read(&SDFile, rtext, f_size(&SDFile), &bytesread);
+  if (f_res != FR_OK)
+  {
+    printf("Read file error. Error Code: %d\n\r", f_res);
+    Error_Handler();
+  }
+
+  printf("Content: %.*s\n\r", bytesread, rtext);
+
+  f_close(&SDFile);
+
+  f_mount(0, "", 0); // Unmount
+
+  printf("written to SD Card\n\r");
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -182,14 +257,6 @@ static void MX_SDIO_SD_Init(void)
   hsd.Init.BusWide = SDIO_BUS_WIDE_4B;
   hsd.Init.HardwareFlowControl = SDIO_HARDWARE_FLOW_CONTROL_DISABLE;
   hsd.Init.ClockDiv = 0;
-  if (HAL_SD_Init(&hsd) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  if (HAL_SD_ConfigWideBusOperation(&hsd, SDIO_BUS_WIDE_4B) != HAL_OK)
-  {
-    Error_Handler();
-  }
   /* USER CODE BEGIN SDIO_Init 2 */
 
   /* USER CODE END SDIO_Init 2 */
@@ -226,6 +293,25 @@ static void MX_UART5_Init(void)
   /* USER CODE BEGIN UART5_Init 2 */
 
   /* USER CODE END UART5_Init 2 */
+
+}
+
+/**
+  * Enable DMA controller clock
+  */
+static void MX_DMA_Init(void)
+{
+
+  /* DMA controller clock enable */
+  __HAL_RCC_DMA2_CLK_ENABLE();
+
+  /* DMA interrupt init */
+  /* DMA2_Stream3_IRQn interrupt configuration */
+  HAL_NVIC_SetPriority(DMA2_Stream3_IRQn, 0, 0);
+  HAL_NVIC_EnableIRQ(DMA2_Stream3_IRQn);
+  /* DMA2_Stream6_IRQn interrupt configuration */
+  HAL_NVIC_SetPriority(DMA2_Stream6_IRQn, 0, 0);
+  HAL_NVIC_EnableIRQ(DMA2_Stream6_IRQn);
 
 }
 
@@ -277,6 +363,32 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
+/**
+ * @brief Replacement for MX generated function MX_SDIO_SD_INIT()
+ * 
+ * @details MX_SDIO_SD_INIT() initialise the BusWide as 4-Bit wide, when it should be
+ *          1-bit wide first (for configuration). The HAL_SD_ConfigWideBusOperation()
+ *          will change the bus width to 4bit.
+ */
+static void SDIO_SD_Init(void) 
+{
+  hsd.Instance = SDIO;
+  hsd.Init.ClockEdge = SDIO_CLOCK_EDGE_RISING;
+  hsd.Init.ClockBypass = SDIO_CLOCK_BYPASS_DISABLE;
+  hsd.Init.ClockPowerSave = SDIO_CLOCK_POWER_SAVE_DISABLE;
+  hsd.Init.BusWide = SDIO_BUS_WIDE_1B;
+  hsd.Init.HardwareFlowControl = SDIO_HARDWARE_FLOW_CONTROL_DISABLE;
+  hsd.Init.ClockDiv = 0;
+  if (HAL_SD_Init(&hsd) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  if (HAL_SD_ConfigWideBusOperation(&hsd, SDIO_BUS_WIDE_4B) != HAL_OK)
+  {
+    Error_Handler();
+  }
+}
+
 /**
  * @brief For printf Library submodule.
  * 

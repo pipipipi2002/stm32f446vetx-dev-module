@@ -2,7 +2,8 @@
     "files.associations": {
         "main.h": "c",
         "stm32f4xx_hal.h": "c",
-        "stm32f4xx_hal_conf.h": "c"
+        "stm32f4xx_hal_conf.h": "c",
+        "fatfs.h": "c"
     },
     "cortex-debug.variableUseNaturalFormat": true,
     "cortex-debug.armToolchainPath": "/Applications/ArmGNUToolchain/12.3.rel1/arm-none-eabi/bin/"

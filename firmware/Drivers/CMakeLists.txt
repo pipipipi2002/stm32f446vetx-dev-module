@@ -16,7 +16,6 @@ message(STATUS "STM32F4 HAL include file path: ${STM32F4_HAL_INCLUDE_DIR}")
 
 
 set(STM32F4_HAL_SOURCE_FILES 
-    ${STM32F4_HAL_SOURCE_DIR}/stm32f4xx_hal_can.c
     ${STM32F4_HAL_SOURCE_DIR}/stm32f4xx_hal_cortex.c
     ${STM32F4_HAL_SOURCE_DIR}/stm32f4xx_hal_dma_ex.c
     ${STM32F4_HAL_SOURCE_DIR}/stm32f4xx_hal_dma.c
@@ -36,8 +35,27 @@ set(STM32F4_HAL_SOURCE_FILES
     ${STM32F4_HAL_SOURCE_DIR}/stm32f4xx_hal.c
     ${STM32F4_HAL_SOURCE_DIR}/stm32f4xx_ll_sdmmc.c )
 
+# FATFS
+set(FATFS_SOURCE_FILES
+    ${CMAKE_CURRENT_SOURCE_DIR}/../FATFS/App/fatfs.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/../FATFS/Target/bsp_driver_sd.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/../FATFS/Target/fatfs_platform.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/../FATFS/Target/ffconf.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/../FATFS/Target/sd_diskio.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/../Middlewares/Third_party/FatFs/src/diskio.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/../Middlewares/Third_party/FatFs/src/ff_gen_drv.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/../Middlewares/Third_party/FatFs/src/ff.c
+    )
+
+set(FATFS_INCLUDE_DIR 
+    ${CMAKE_CURRENT_SOURCE_DIR}/../FATFS/App/
+    ${CMAKE_CURRENT_SOURCE_DIR}/../FATFS/Target/
+    ${CMAKE_CURRENT_SOURCE_DIR}/../Middlewares/Third_party/FatFs/src/
+)
+
 add_library(${PROJECT_NAME} INTERFACE )
-target_sources(${PROJECT_NAME} INTERFACE ${STM32F4_HAL_SOURCE_FILES} )
+target_sources(${PROJECT_NAME} INTERFACE ${STM32F4_HAL_SOURCE_FILES} ${FATFS_SOURCE_FILES})
 target_include_directories(${PROJECT_NAME} INTERFACE 
     ${STM32F4_HAL_INCLUDE_DIR}
-    ${STM32F4_CMSIS_INCLUDE_DIR} )
+    ${STM32F4_CMSIS_INCLUDE_DIR} 
+    ${FATFS_INCLUDE_DIR})

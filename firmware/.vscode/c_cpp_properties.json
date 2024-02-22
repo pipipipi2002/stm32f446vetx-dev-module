@@ -9,7 +9,10 @@
                 "${workspaceFolder}/Drivers/CMSIS/Include",
                 "${workspaceFolder}/Drivers/CMSIS/Device/ST/STM32F4xx/Include",
                 "${workspaceFolder}/Project/Inc",
-                "${workspaceFolder}/Lib/printf"
+                "${workspaceFolder}/Lib/printf",
+                "${workspaceFolder}/Lib/littlefs",
+                "${workspaceFolder}/FATFS"
+
             ],
             "defines": [
                 "USE_HAL_DRIVER",

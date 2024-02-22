@@ -1,3 +1,6 @@
 [submodule "firmware/Lib/printf"]
 	path = firmware/Lib/printf
 	url = https://github.com/mpaland/printf
+[submodule "firmware/Lib/littlefs"]
+	path = firmware/Lib/littlefs
+	url = https://github.com/littlefs-project/littlefs
