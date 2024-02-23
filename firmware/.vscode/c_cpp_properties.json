@@ -11,7 +11,9 @@
                 "${workspaceFolder}/Project/Inc",
                 "${workspaceFolder}/Lib/printf",
                 "${workspaceFolder}/Lib/littlefs",
-                "${workspaceFolder}/FATFS"
+                "${workspaceFolder}/FATFS/App",
+                "${workspaceFolder}/FATFS/Target",
+                "${workspaceFolder}/Middlewares/Third_Party/FatFs/src"
 
             ],
             "defines": [

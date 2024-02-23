@@ -24,9 +24,8 @@
 /* USER CODE BEGIN Includes */
 #include <stdbool.h>
 #include <printf.h>
-#include <lfs.h>
 #include "selftest.h"
-#include "littlefs_if.h"
+#include "fatfs_if.h"
 
 /* USER CODE END Includes */
 
@@ -78,10 +77,7 @@ static void SDIO_SD_Init(void);
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-  FRESULT res; /* FatFs function common result code */
-  uint32_t byteswritten, bytesread; /* File write/read counts */
-  uint8_t wtext[] = "STM32 FATFS works bad!"; /* File write buffer */
-  uint8_t rtext[_MAX_SS];/* File read buffer */
+
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -104,71 +100,33 @@ int main(void)
   MX_GPIO_Init();
   MX_DMA_Init();
   MX_UART5_Init();
-  MX_FATFS_Init();
   /* USER CODE BEGIN 2 */
   if (!HAL_GPIO_ReadPin(SDIO_nDET_GPIO_Port, SDIO_nDET_Pin))
   {
     printf("SD Card Detected\n\r");
     SDIO_SD_Init();
+    ffif_init();
+
+    /* Test Rountine */
+
+    ffif_mountSd();
+    uint8_t testData[] = "This is a test";
+    uint8_t testFile[] = "test.txt";
+    uint8_t readBuffer[100];
+    uint32_t readBytes;
+
+    ffif_createFile(testFile);
+    ffif_writeFile(testFile, testData);
+    ffif_readFile(testFile, readBuffer, &readBytes);
+    ffif_unmountSd();
+    ffif_deinit();
+
+    printf("Content: %.*s\n\r", readBytes, readBuffer);
   } 
   else
   {
     printf("SD Card NOT Detected\n\r");
   }
-
-  FRESULT f_res;
-
-  f_res = f_mount(&SDFatFS, (TCHAR const*)SDPath, 0);
-  if (f_res == FR_NO_FILESYSTEM)
-  {
-    printf("Filesystem not FAT based, formatting.\n\r");
-    f_res = f_mkfs((TCHAR const*)SDPath, FM_ANY, 0, rtext, sizeof(rtext));
-    if (f_res != FR_OK)
-    {
-      printf("Formatting Error. Error Code: %d\n\r", f_res);
-      Error_Handler();
-    }
-  } 
-  else if (f_res != FR_OK)
-  {
-    printf("Mounting Error. Error Code: %d\n\r", f_res);
-    Error_Handler();
-  }
-
-  f_res = f_open(&SDFile, "goodAM.TXT", FA_CREATE_ALWAYS | FA_WRITE);
-  if (f_res != FR_OK)
-  {
-    printf("Open file error. Error Code: %d\n\r", f_res);
-    Error_Handler();
-  }
-
-  f_res = f_write(&SDFile, wtext, strlen((char *)wtext),  (void *)&byteswritten);
-  if ((byteswritten == 0) || (f_res != FR_OK))
-  {
-    printf("Writing Error. Error Code: %d\n\r", f_res);
-    Error_Handler();
-  }
-  f_close(&SDFile);
-
-  f_res = f_open(&SDFile, "goodAM.TXT", FA_OPEN_EXISTING | FA_READ);
-  if (f_res != FR_OK)
-  {
-    printf("Open file error. Error Code: %d\n\r", f_res);
-    Error_Handler();
-  }
-
-  f_res = f_read(&SDFile, rtext, f_size(&SDFile), &bytesread);
-  if (f_res != FR_OK)
-  {
-    printf("Read file error. Error Code: %d\n\r", f_res);
-    Error_Handler();
-  }
-
-  printf("Content: %.*s\n\r", bytesread, rtext);
-
-  f_close(&SDFile);
-
-  f_mount(0, "", 0); // Unmount
 
   printf("written to SD Card\n\r");
   /* USER CODE END 2 */
