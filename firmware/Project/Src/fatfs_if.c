@@ -125,7 +125,7 @@ HAL_StatusTypeDef ffif_readFile(char* name, uint8_t* data, uint32_t* dataReadByt
 
     HAL_StatusTypeDef status = HAL_OK;
 
-    ffif_res = f_read(&ffif_file, data, f_size(&ffif_file), &dataReadBytes);
+    ffif_res = f_read(&ffif_file, data, f_size(&ffif_file), dataReadBytes);
     if (ffif_res != FR_OK) 
     {
         printf("Error code %d when reading file %s\n\r", ffif_res, name);
